@@ -1,0 +1,61 @@
+<div class="container-fluid section-start" id="show-product" data-product-id="<%= @product.id %>">
+
+  <h1>Showing Product: <%= @product.name %> </h1>
+  <div class="col-xs-12  col-sm-6  ">
+  <%= image_tag(@product.image_url, class: "img-fluid img-responsive img-modify img-zoom data_zoom_image: '@product.image_url'") %>
+  </div>
+  <% cache @product do %>
+  <div class="col-xs-12  col-sm-6   ">
+    <p>
+      <div class="side-to-side">Name:</div>
+      <div class="better-text"><%= @product.name %></div>
+    </p>
+
+    <p class="partners">
+      <div class="wrapper">
+        <div id="one" class="side-to-side ">Details:</div>
+        <div id="two" class="better-text in-wrap"><%= @product.description %></div>
+      </div>
+    </p>
+   <% end %>
+    <p>
+      <div class="side-to-side">Cost(<i class="fas fa-dollar-sign"></i>):</div>
+      <div class="better-text"><%= @product.price/100 %></div>
+    </p>
+
+    <p>
+      <div class="side-to-side">Colour:</div>
+      <div class="better-text"><%= @product.colour %></div>
+    </p>
+
+    <p class="last-section-p">
+      <div class="side-to-side">Average Rating:</div>
+      <div class="rated better-text" id="average-rating" data-score="<%= @product.average_rating %>"></div>
+    </p>
+    <p>
+
+      <%= form_with(url: '/payments') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+        <%= form.hidden_field :product_id, value: @product.id %>
+      <% end %>
+
+    </p>
+</div>
+
+
+
+  <div class="reset">
+
+    <%= render 'new_comment' %>
+    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+    <%= render 'comments' %>
+
+  </div>
+
+  <div>
+    <% if signed_in? && current_user.admin? %>
+     <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-info bottom-link" %>
+    <% end %>
+    <%= link_to 'Back', products_path, class: "btn btn-warning bottom-link" %>
+  </div>
+</div>

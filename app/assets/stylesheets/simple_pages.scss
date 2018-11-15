@@ -1,0 +1,109 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 3em;
+  color: blue;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.section-start::before {
+  display: block;
+  content: " ";
+  height: 5.0em;
+  margin: -2em 0 0;
+}
+
+.imp-messages {
+  margin-top: 4.0em;
+}
+.resume a:active {
+  color: red;
+}
+
+.resume a:visited {
+  color: green;
+}
+
+.copyright {
+  display: inline-block;
+  height: 27px;
+  position: relative;
+}
+.text {
+  vertical-align: top;
+  padding-left: 0.5em;
+}
+
+.resume {
+  float: right;
+}
+
+.beside {
+  display: inline-block;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+}
+
+.beside a {
+  vertical-align: top;
+}
+
+p, li, form {
+  font-family:  Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+.projectName {
+    text-transform: uppercase;
+}
+
+.projectName a {
+    color: white;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+}
+
+.carousel-caption {
+  color: black;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+  border:1px solid black;
+}
+
+.carousel-indicators .active{
+  background-color: black;
+}
+
+.image-carousel {
+  width: 1200px;
+
+  object-fit:scale-down;
+}
+
+.navbar-nav>li>form {
+  line-height: 20px;
+}
+
+.nav>li>form {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}

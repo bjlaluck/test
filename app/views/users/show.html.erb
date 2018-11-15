@@ -1,0 +1,30 @@
+<div class="container-fluid section-start" >
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <strong>User ID:</strong>
+    <%= current_user.id %>
+  </p>
+
+  <p>
+    <strong>Comments: </strong>
+    <%= $redis.get("comments") %>
+  </p>
+
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', request.referer %>
+</div>

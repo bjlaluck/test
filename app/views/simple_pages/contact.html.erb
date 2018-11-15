@@ -1,0 +1,25 @@
+<div class="container-fluid section-start" id="contact">
+
+  <h1>Contact Us</h1>
+  <%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name, 'Name *' %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name", required: true %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email, 'E-mail *' %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email", required: true %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message, 'Message *' %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5, required: true %>
+  </div>
+</div>
+<%= form.submit "Send", class: "form_label btn btn-primary" %>
+<% end %>
+
+
+</div>

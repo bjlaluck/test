@@ -1,0 +1,352 @@
+/* line 4, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.bottom-link {
+  margin-top: 2em;
+}
+
+/* line 8, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.table-products {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 13, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.img-modify {
+  width: 500px;
+  height: 315px;
+  /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+  object-fit: scale-down;
+}
+
+/* line 22, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 38, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+}
+
+/* line 46, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.better-text {
+  display: inline-block;
+  font-family: Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+/* line 53, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.wrapper {
+  overflow: hidden;
+}
+
+/* line 57, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+#one {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 63, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+#two {
+  background-color: white;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+  /* line 69, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+  #one {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+}
+/* line 75, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+}
+
+/* line 83, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.better-text {
+  display: inline-block;
+  font-family: Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+/* line 90, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.in-wrap {
+  display: block;
+}
+
+/* line 94, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/products.scss */
+.reset {
+  clear: both;
+}
+/* line 1, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 3em;
+  color: blue;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 14, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.section-start::before {
+  display: block;
+  content: " ";
+  height: 5.0em;
+  margin: -2em 0 0;
+}
+
+/* line 21, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.imp-messages {
+  margin-top: 4.0em;
+}
+
+/* line 24, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.resume a:active {
+  color: red;
+}
+
+/* line 28, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.resume a:visited {
+  color: green;
+}
+
+/* line 32, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.copyright {
+  display: inline-block;
+  height: 27px;
+  position: relative;
+}
+
+/* line 37, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.text {
+  vertical-align: top;
+  padding-left: 0.5em;
+}
+
+/* line 42, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.resume {
+  float: right;
+}
+
+/* line 46, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.beside {
+  display: inline-block;
+  padding: 1px 5px 1px 5px;
+  vertical-align: top;
+}
+
+/* line 52, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.beside a {
+  vertical-align: top;
+}
+
+/* line 56, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+p, li, form {
+  font-family: Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+/* line 62, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.projectName {
+  text-transform: uppercase;
+}
+
+/* line 66, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.projectName a {
+  color: white;
+}
+
+/* line 70, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 75, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.header {
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+}
+
+/* line 81, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  color: black;
+}
+
+/* line 85, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+  border: 1px solid black;
+}
+
+/* line 91, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators .active {
+  background-color: black;
+}
+
+/* line 95, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.image-carousel {
+  width: 1200px;
+  object-fit: scale-down;
+}
+
+/* line 101, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.navbar-nav > li > form {
+  line-height: 20px;
+}
+
+/* line 105, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/simple_pages.scss */
+.nav > li > form {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+/* line 4, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/users.scss */
+.form-align {
+  display: block;
+  text-align: center;
+}
+
+/* line 10, /Users/bohdanlaluck/Desktop/Aweb/Section5/5.8/app/assets/stylesheets/users.scss */
+.middle-screen {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 350px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

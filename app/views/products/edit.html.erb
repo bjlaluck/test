@@ -1,0 +1,9 @@
+<div class="container-fluid section-start" id="edit-product">
+
+  <h1>Editing Product: <%= @product.name %></h1>
+
+  <%= render 'form', product: @product %>
+
+  <%= link_to 'Show', @product, class: "btn btn-success bottom-link" %>
+  <%= link_to 'Back', request.referer, class: "btn btn-warning bottom-link" %>
+</div>

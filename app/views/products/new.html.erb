@@ -1,0 +1,7 @@
+<div class="container-fluid section-start" id="new-product">
+  <h1>New Product</h1>
+
+  <%= render 'form', product: @product %>
+
+  <%= link_to 'Back', request.referer, class: "btn btn-warning bottom-link" %>
+</div>

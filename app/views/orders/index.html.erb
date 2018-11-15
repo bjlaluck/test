@@ -1,0 +1,16 @@
+<div class="container-fluid section-start" id="orders-index">
+  <h1>Orders</h1>
+  <div class="row">
+    <% @orders.each do |order| %>
+      <div class="col-sm">
+        <h1>
+          Order # <%= order.id %>:
+          <%= link_to order.product.name, order %>
+        </h1>
+        <p><%= order.product.description %></p>
+        <strong>$ <%= order.product.price/100 %></strong>
+      </div><!-- /col -->
+    <% end %>
+    </div>
+
+</div>

@@ -1,0 +1,97 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.bottom-link {
+  margin-top: 2em;
+}
+
+.table-products {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-modify{
+   width:500px;
+   height:315px;
+
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;
+
+}
+
+hr {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+
+}
+
+.better-text {
+  display: inline-block;
+  font-family:  Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+.wrapper {
+  overflow:hidden;
+}
+
+#one {
+  float:left;
+  margin-right:10px;
+  margin-top:5px;
+}
+
+#two {
+  background-color: white;
+  overflow:hidden;
+}
+
+@media screen and (max-width: 720px) {
+   #one {
+    float: none;
+    margin-right:0;
+    width:auto;
+  }
+}
+.side-to-side {
+  display: inline-block;
+  text-align: center;
+  font-family: Cousine, Lucida, Courier, monospace;
+  font-size: 2em;
+
+}
+
+.better-text {
+  display: inline-block;
+  font-family:  Merriweather, Lucida, Garamond, serif;
+  font-size: 1.33em;
+  font-weight: 100;
+}
+
+.in-wrap {
+  display: block;
+}
+
+.reset {
+  clear: both;
+
+}

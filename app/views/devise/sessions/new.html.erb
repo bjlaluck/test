@@ -1,0 +1,35 @@
+<div class="container-fluid section-start " >
+
+
+
+  <div class="form-align">
+
+
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "middle-screen "}) do |f| %>
+      <h2 >Please sign in </h2>
+      <div class="field form-group">
+
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: "Enter Email" %>
+      </div>
+
+      <div class="field form-group">
+
+        <%= f.password_field :password, autocomplete: "current-password", class: 'form-control', placeholder: "Enter Password" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="field form-check">
+          <%= f.check_box :remember_me, class: 'form-check-input'%>
+          <%= f.label :remember_me, class: 'form-check-label checkbox-inline' %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "Sign in", class: 'btn btn-primary btn-block' %>
+      </div>
+    <% end %>
+  </div>
+
+  <%= render "devise/shared/links" %>
+</div>

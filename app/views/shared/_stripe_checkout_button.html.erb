@@ -1,0 +1,11 @@
+  <% if signed_in? %>
+
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-image="<%= @product.image_url %>"
+        data-name="mededfuture.com"
+        data-description="<%= @product.name %>"
+        data-amount="<%= @product.price %>">
+      </script>
+  <% end %>

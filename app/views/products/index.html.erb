@@ -1,0 +1,18 @@
+<div class="container-fluid section-start" id="index-product">
+
+  <h1>Products</h1>
+
+
+    <div class="row">
+      <% cache(cache_key_for_products) do %>
+        <%= render @products %>
+      <% end %>
+   </div>
+
+
+
+  <br>
+    <% if signed_in? && current_user.admin? %>
+        <%= link_to 'New Product', new_product_path, class: "btn btn-warning" %>
+    <% end %>
+</div>

@@ -1,0 +1,23 @@
+<div class="container-fluid section-start" id="orders-show">
+  <h2>Order Information</h2>
+  <p>
+    <h3>Order ID:</h3>
+    <%= @order.id %>
+  </p>
+
+  <p >
+    <h3>Product Name:</h3>
+    <%= @order.product.name %>
+  </p>
+
+  <p >
+    <h3>Product Price:</h3>
+    <%= number_to_currency(@order.product.price/100) %>
+  </p>
+
+  <p class="last-section-p">
+    <h3>Total Price:</h3>
+    <%= number_to_currency(@order.total/100) %>
+  </p>
+  <%= link_to 'Go To All Orders', request.referer, class: "btn btn-warning" %>
+</div>

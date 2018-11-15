@@ -1,0 +1,20 @@
+
+  <div class="col-xs-12  col-sm-6 col-md-4 col-lg-3  ">
+    <% cache product do %>
+      <%= image_tag(product.image_url, class: "img-fluid img-responsive img-modify") %>
+        <h1><%= product.name %></h1></a>
+        <p><%= product.description %></p><hr>
+        <h2>$ <%= product.price/100 %></h2>
+
+        <%= link_to 'Show', product %>
+
+        <% if signed_in? && current_user.admin? %>
+          <%= link_to ('<span class="glyphicon glyphicon-edit"></span>').html_safe, edit_product_path(product)  %>
+        <% end %>
+        
+        <% if signed_in? && current_user.admin? %>
+          <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    <% end %>
+
+  </div>
